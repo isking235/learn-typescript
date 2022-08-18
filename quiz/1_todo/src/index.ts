@@ -1,4 +1,5 @@
-let todoItems;
+let todoItems: any;
+
 
 // api
 function fetchTodoItems() {
@@ -16,7 +17,7 @@ function fetchTodos() {
   return todos;
 }
 
-function addTodo(todo) {
+function addTodo(todo)  :void {
   todoItems.push(todo);
 }
 
