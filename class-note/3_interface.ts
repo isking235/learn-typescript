@@ -54,6 +54,21 @@ var obj :StringRegexDictionary= {
 }
 //obj['cssFile'] = 'a' 오류 발생 
 
-Object.keys(obj).forEach(function(value)) {
+Object.keys(obj).forEach(function(value){});
 
+//인터페이스 확장
+interface Person {
+    name : string;
+    age : number;
+
+}
+
+interface Developer extends Person {
+    laguage : string;
+}
+
+var capt2 : Developer = {
+    laguage : 'ts',
+    age : 100,
+    name: '캡틴'
 }
