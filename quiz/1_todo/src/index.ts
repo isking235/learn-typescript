@@ -1,4 +1,4 @@
-let todoItems: object[];
+let todoItems: {id:number; title :string; done: boolean}[];
 
 
 // api
@@ -17,7 +17,7 @@ function fetchTodos() :object[]{
   return todos;
 }
 
-function addTodo(todo:object)  :void {
+function addTodo(todo:{id:number; title :string; done: boolean})  :void {
   todoItems.push(todo);
 }
 
@@ -25,7 +25,7 @@ function deleteTodo(index: number) :void {
   todoItems.splice(index, 1);
 }
 
-function completeTodo(index: number, todo:object) :void {
+function completeTodo(index: number, todo:{id:number; title :string; done: boolean}) :void {
   todo.done = true;
   todoItems.splice(index, 1, todo);
 }
