@@ -1,12 +1,12 @@
-/* interface Person {
+interface Person {
     name : string;
     age: number;
-} */
+}
 
-type Person = {
+/* type Person = {
     name : string;
     age:number;
-}
+} */
 
 var seho : Person = {
     name : '세호',
@@ -18,5 +18,5 @@ var str:MyString = 'hello';
 
 type Todo = {id:string; title : string; done : boolean};
 function getTodo(todo : Todo) {
-    
+
 }
