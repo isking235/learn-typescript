@@ -5,7 +5,7 @@ interface User {
 }
 
 //변수에 활용한 인터페이스 활용
-var seho : User = {
+var seho2 : User = {
     age : 33,
     name : '세호'
 }
@@ -63,11 +63,11 @@ interface Person1 {
 
 }
 
-interface Developer extends Person1 {
+interface Developer3 extends Person1 {
     laguage : string;
 }
 
-var capt2 : Developer = {
+var capt2 : Developer3 = {
     laguage : 'ts',
     age : 100,
     name: '캡틴'

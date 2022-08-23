@@ -8,7 +8,7 @@ interface Person {
     age:number;
 } */
 
-var seho : Person = {
+var seho3 : Person = {
     name : '세호',
     age : 30
 }
