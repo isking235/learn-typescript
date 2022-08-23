@@ -57,13 +57,13 @@ var obj :StringRegexDictionary= {
 Object.keys(obj).forEach(function(value){});
 
 //인터페이스 확장
-interface Person {
+interface Person1 {
     name : string;
     age : number;
 
 }
 
-interface Developer extends Person {
+interface Developer extends Person1 {
     laguage : string;
 }
 
