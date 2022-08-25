@@ -51,3 +51,20 @@ function logText<T>(text:T) :T{
 const str = logText<string>('a');
 str.split('');
 logText<boolean>(true); 
+
+//인터페이스에 제네릭을 선언하는 방법
+/* interface Dropdown{
+    value : string;
+    selected : boolean;
+}
+
+const obj : Dropdown = {value:10, selected:false}; */
+
+
+interface Dropdown<T> {
+    value: T;
+    selected : boolean;
+}
+
+const obj1 : Dropdown<number> = {value:'abc', selected:false};//오류남
+const obj2 : Dropdown<string> = {value:'abc', selected:false}; //'abc' 가 string라 오류 안 남
