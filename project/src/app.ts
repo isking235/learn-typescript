@@ -1,5 +1,3 @@
-// @ts_check
-
 // utils
 function $(selector) {
   return document.querySelector(selector);
@@ -38,10 +36,7 @@ function createSpinnerElement(id) {
 let isDeathLoading = false;
 let isRecoveredLoading = false;
 
-// api
-/**
- * @returns {Promise<>}
- */
+
 
 function fetchCovidSummary() {
   const url = 'https://api.covid19api.com/summary';
